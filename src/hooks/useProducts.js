@@ -27,7 +27,7 @@ const productsApi = async ({ queryKey, pageParam = 1 }) => {
   }
 
   const res = await axios.get(
-    `https://dummy-store-api.herokuapp.com/products?_page=${page}&_limit=30&${filterQueries}`
+    `products?_page=${page}&_limit=30&${filterQueries}`
   );
 
   return {

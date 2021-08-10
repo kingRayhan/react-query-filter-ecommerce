@@ -3,8 +3,8 @@ import React from "react";
 import { useQuery } from "react-query";
 import Select from "react-select";
 
-const categoriesAPI = async ({}) => {
-  const res = await axios.get("http://localhost:4000/categories");
+const categoriesAPI = async () => {
+  const res = await axios.get("categories");
   return res.data;
 };
 
